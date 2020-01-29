@@ -3,8 +3,6 @@ import Header from "../../components/Header";
 import SideBar from "../../components/SideBar";
 import { Content } from "carbon-components-react/lib/components/UIShell";
 
-import "./index.scss";
-
 const Layout = props => {
   return (
     <div>

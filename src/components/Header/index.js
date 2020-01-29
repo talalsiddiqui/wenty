@@ -8,8 +8,6 @@ import {
   HeaderGlobalBar
 } from "carbon-components-react/lib/components/UIShell";
 
-import "./index.scss";
-
 const TutorialHeader = () => (
   <Header aria-label="IBM Platform Name">
     <HeaderName href="#">Wenty</HeaderName>
