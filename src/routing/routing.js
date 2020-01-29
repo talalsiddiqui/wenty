@@ -1,11 +1,12 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
-import Home from "../container/Home";
+import { Switch } from "react-router-dom";
+import Dashboard from "../container/Dashboard";
+import PrivateRoute from "./privateRoute";
 
 const Routing = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
+      <PrivateRoute exact path={"/"} component={Dashboard} />
     </Switch>
   );
 };
