@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import SideBar from "../../components/SideBar";
-import { Content } from "carbon-components-react/lib/components/UIShell";
+// import { Content } from "carbon-components-react/lib/components/UIShell";
 
 const Layout = props => {
   return (
@@ -9,7 +9,7 @@ const Layout = props => {
       <Header />
       <br />
       <SideBar />
-      <Content id="main-content">{props.children}</Content>
+      {/* <Content id="main-content">{props.children}</Content> */}
     </div>
   );
 };
