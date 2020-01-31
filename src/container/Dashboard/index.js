@@ -1,21 +1,18 @@
 import React from "react";
-import { PageHeader, Col, Row } from "antd";
+import { Typography, Col, Row } from "antd";
+import Charts from "../../components/Charts";
+import Sessions from "../../components/Sessions";
 
 import styles from "./index.module.scss";
 
-import Charts from "../../components/Charts";
-import Sessions from "../../components/Sessions";
-import TabsComponent from "../../components/Tabs";
-
-// import styles from "./index.module.scss";
+const { Text } = Typography;
 
 const index = () => {
   return (
     <div className={styles.dashboard}>
       <div className={styles.breadcrumb}>Good everning, Ali</div>
-      <div className={styles.pageHeader}>
-        <PageHeader title='Dasboard' />
-      </div>
+      <Text className={styles.dashboardTitle}>Dasboard</Text>
+
       <div className={styles.infoRow}>
         <Row>
           <Col span={8}>Weekly Snapshot</Col>

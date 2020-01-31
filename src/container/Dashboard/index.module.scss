@@ -12,18 +12,11 @@
     font-size: 13.5px;
   }
 
-  .pageHeader {
-    margin: 0 0 0 0.5rem;
-    padding: 0;
-    span {
-      font-size: 42px;
-      font-weight: normal;
-      padding: 0;
-      margin: 0;
-      text-align: left;
-      color: #161616;
-      line-height: 50px;
-    }
+  .dashboardTitle {
+    margin: 3rem 0 0 2rem;
+    font-size: 42px;
+    color: #161616;
+    line-height: 50px;
   }
 
   .infoRow {
@@ -38,7 +31,6 @@
   height: 16px;
   width: 148px;
   color: #393939;
-  font-family: "IBM Plex Sans";
   font-size: 12px;
   letter-spacing: 0.32px;
   line-height: 16px;

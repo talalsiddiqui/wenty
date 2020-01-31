@@ -13,27 +13,27 @@ const SessionComponent = () => {
         <div className={styles.card}>
           <div className={styles.cardHeader}>
             <div className={styles.headerImg}>
-              <img src={girlIcon} alt='' />
+              <img src={girlIcon} alt="" />
             </div>
             <div className={styles.headerMoreButton}>...</div>
           </div>
           <div className={styles.cardContent}>
             <div className={styles.contentHeader}>
-              <div className={styles.cardTitle}>Jemima Toya</div>
+              <div className={styles.cardTitle}>Jemima </div>
               <div className={styles.cardTags}>
-                <Tag color='red'>Attendee has joined</Tag>
+                <Tag color="red">Attendee has joined</Tag>
               </div>
             </div>
             <div className={styles.cardTime}>
               <p>6:30 PM - 7:30 PM, 18 January 2020</p>
             </div>
             <div className={styles.contentFooter}>
-              <a href='#'>View session brief</a> . <a href='#'>Send message</a>
+              <a href="#">View session brief</a> . <a href="#">Send message</a>
               <div className={styles.contentFooter2}>
-                <Button block color='primary' type='primary'>
+                <Button block color="primary" type="primary">
                   <div className={styles.buttonText}>Join call</div>
                   <div className={styles.buttonIcon}>
-                    <Icon type='arrow-right' />
+                    <Icon type="arrow-right" />
                   </div>
                 </Button>
               </div>
@@ -45,7 +45,7 @@ const SessionComponent = () => {
         <div className={styles.card}>
           <div className={styles.cardHeader}>
             <div className={styles.headerImg}>
-              <img src={maleIcon} alt='' />
+              <img src={maleIcon} alt="" />
             </div>
             <div className={styles.headerMoreButton}>...</div>
           </div>
@@ -60,12 +60,12 @@ const SessionComponent = () => {
               <p>3:30 PM - 4:45 PM, 20 January 2020</p>
             </div>
             <div className={styles.contentFooter}>
-              <a href='#'>Send message</a> . <a href='#'>Reschedule</a>
+              <a href="#">Send message</a> . <a href="#">Reschedule</a>
               <div className={styles.contentFooter2}>
-                <Button block type='primary' className={styles.button2}>
+                <Button block type="primary" className={styles.button2}>
                   <div className={styles.buttonText}>View session brief</div>
                   <div className={styles.buttonIcon}>
-                    <Icon type='arrow-right' />
+                    <Icon type="arrow-right" />
                   </div>
                 </Button>
               </div>
