@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import SideBar from "../../components/SideBar";
+import Dashboard from '../Dashboard';
 import { Layout } from "antd";
 const { Content } = Layout;
 
@@ -19,7 +20,7 @@ const LayoutDesign = props => {
               minHeight: 280
             }}
           >
-            Contentwevwevwevwevwev
+            <Dashboard />
           </Content>
         </Layout>
       </Layout>

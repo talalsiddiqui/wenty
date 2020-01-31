@@ -1,3 +1,49 @@
+@import "../../utils/theme.scss";
+.dashboard {
+  width: 100%;
+
+  .breadcrumb {
+    width: 100%;
+    margin: 3rem 0 0 2rem;
+    color: #9b9b9b;
+    font-size: 13.5px;
+  }
+
+  .pageHeader {
+    margin: 0 0 0 0.5rem;
+    padding: 0;
+    span {
+      font-size: 44px;
+      font-weight: normal;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  .infoRow {
+    margin: 0 0 0 2rem;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .reviews {
+    border-right: 1px solid #ccc;
+    margin-right: 0.5rem;
+    h4 {
+      font-weight: normal;
+      margin-bottom: -0.1rem;
+    }
+    p {
+      font-size: 15px;
+      color: #585858;
+    }
+    a {
+      color: $themeColor;
+    }
+  }
+}
+
 .label {
   height: 16px;
   width: 148px;
@@ -6,14 +52,6 @@
   font-size: 12px;
   letter-spacing: 0.32px;
   line-height: 16px;
-}
-.dashboard {
-  height: 50px;
-  width: 203px;
-  color: #161616;
-  font-family: "IBM Plex Sans Light";
-  font-size: 42px;
-  line-height: 50px;
 }
 
 .weeklyWrpper {
