@@ -32,9 +32,9 @@ const index = () => {
         </Row>
       </div>
 
-      <div>
+      {/* <div>
         <TabsComponent />
-      </div>
+      </div> */}
     </div>
   );
 };

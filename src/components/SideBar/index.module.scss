@@ -1,15 +1,31 @@
-.homeWrapper {
-  height: 96px;
-  width: 100%;
-  .home {
-    color: #161616;
-    font-family: "IBM Plex Sans";
-    font-size: 20px;
-    line-height: 26px;
-    padding: 54px 266px 16px 16px;
-  }
+@import "../../utils/theme.scss";
+.sidebarMain {
+  margin-top: 3rem;
 }
+.sideBar {
+  color: #000;
+  .sideBarHeader {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-left: 0.6rem;
+  }
 
-.navItems {
-  height: 48px;
+  .ul {
+    .active {
+      background-color: #e0e0e0 !important;
+    }
+    background-color: #f0f2f5 !important;
+    li {
+      background-color: #f0f2f5 !important;
+      a {
+        &:active {
+          background-color: red !important;
+        }
+      }
+      ul {
+        background-color: #f0f2f5 !important;
+      }
+    }
+  }
 }

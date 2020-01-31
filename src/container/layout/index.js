@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import SideBar from "../../components/SideBar";
-import Dashboard from '../Dashboard';
+import Dashboard from "../Dashboard";
 import { Layout } from "antd";
 const { Content } = Layout;
 
@@ -12,14 +12,7 @@ const LayoutDesign = props => {
       <Layout style={{ height: "calc(100vh -  65px)" }}>
         <SideBar />
         <Layout style={{ padding: "0 24px 24px" }}>
-          <Content
-            style={{
-              background: "#fff",
-              padding: 24,
-              margin: 0,
-              minHeight: 280
-            }}
-          >
+          <Content>
             <Dashboard />
           </Content>
         </Layout>

@@ -1,65 +1,48 @@
 import React from "react";
-import { Layout, Menu, Icon } from "antd";
+import { Layout, Menu, Icon, Tag } from "antd";
+import styles from "./index.module.scss";
 
 const { SubMenu } = Menu;
 const { Sider } = Layout;
 
-// import styles from "./index.module.scss";
-
 const SideBar = () => (
-  <>
-    <Sider width={200} style={{ background: "#fff" }}>
-      <Menu
-        mode="inline"
-        defaultSelectedKeys={["1"]}
-        defaultOpenKeys={["sub1"]}
-        style={{ height: "100%", borderRight: 0 }}
-      >
-        <SubMenu
-          key="sub1"
-          title={
-            <span>
-              <Icon type="user" />
-              subnav 1
-            </span>
-          }
-        >
-          <Menu.Item key="1">option1</Menu.Item>
-          <Menu.Item key="2">option2</Menu.Item>
-          <Menu.Item key="3">option3</Menu.Item>
-          <Menu.Item key="4">option4</Menu.Item>
-        </SubMenu>
-        <SubMenu
-          key="sub2"
-          title={
-            <span>
-              <Icon type="laptop" />
-              subnav 2
-            </span>
-          }
-        >
-          <Menu.Item key="5">option5</Menu.Item>
-          <Menu.Item key="6">option6</Menu.Item>
-          <Menu.Item key="7">option7</Menu.Item>
-          <Menu.Item key="8">option8</Menu.Item>
-        </SubMenu>
-        <SubMenu
-          key="sub3"
-          title={
-            <span>
-              <Icon type="notification" />
-              subnav 3
-            </span>
-          }
-        >
-          <Menu.Item key="9">option9</Menu.Item>
-          <Menu.Item key="10">option10</Menu.Item>
-          <Menu.Item key="11">option11</Menu.Item>
-          <Menu.Item key="12">option12</Menu.Item>
-        </SubMenu>
-      </Menu>
-    </Sider>
-  </>
+  <div className={styles.sideBar}>
+    <div className={styles.sidebarMain}>
+      <Sider width={320} style={{ background: "#F0F2F5" }}>
+        <div className={styles.sideBarHeader}>Home</div>
+        <div>
+          <Menu
+            className={styles.ul}
+            mode='inline'
+            defaultSelectedKeys={["1"]}
+            defaultOpenKeys={["sub1"]}
+            style={{ height: "100%", borderRight: 0 }}
+          >
+            <Menu.Item className={styles.active}>Dashboard</Menu.Item>
+            <SubMenu
+              key='sub2'
+              title={
+                <span>
+                  <Icon type='laptop' />
+                  Sessions
+                </span>
+              }
+            >
+              <Menu.Item key='5'>
+                <Icon type='user' /> New sessions <Tag>New</Tag> <Tag>2</Tag>
+              </Menu.Item>
+              <Menu.Item key='6'>
+                <Icon type='bulb' /> Upcoming sessions <Tag>4</Tag>
+              </Menu.Item>
+              <Menu.Item key='7'>
+                <Icon type='message' /> Past sessions <Tag>8</Tag>
+              </Menu.Item>
+            </SubMenu>
+          </Menu>
+        </div>
+      </Sider>
+    </div>
+  </div>
 );
 
 export default SideBar;
