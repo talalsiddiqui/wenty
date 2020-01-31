@@ -3,7 +3,7 @@ import { Router } from "react-router-dom";
 import Routes from "./routing/routing";
 import { history } from "./routing/history";
 import "./App.scss";
-import "@carbon/charts/styles.css";
+import "antd/dist/antd.css";
 
 function App() {
   return (
